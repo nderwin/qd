@@ -1,5 +1,7 @@
-package com.github.nderwin.qd.control;
+package com.github.nderwin.qd.boundary;
 
+import com.github.nderwin.qd.control.ApplicationExitEvent;
+import com.github.nderwin.qd.control.I18n;
 import jakarta.annotation.PostConstruct;
 import jakarta.enterprise.event.Event;
 import jakarta.inject.Inject;
