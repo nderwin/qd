@@ -1,7 +1,6 @@
 package com.github.nderwin.qd.boundary;
 
 import com.github.nderwin.qd.control.ApplicationExitEvent;
-import com.github.nderwin.qd.control.ExitAction;
 import com.github.nderwin.qd.control.I18n;
 import io.quarkiverse.desktop.awt.DesktopStartupEvent;
 import jakarta.enterprise.event.Observes;
@@ -23,10 +22,17 @@ public class MainFrame extends JFrame {
     I18n i18n;
     
     @Inject
-    ExitAction exitAction;
+    IconManager iconManager;
     
+    @Inject
+    AboutAction aboutAction;
+    
+    @Inject
+    ExitAction exitAction;
+
     void open(@Observes DesktopStartupEvent evt) {
         setTitle(i18n.getMessage("app.title"));
+        setIconImage(iconManager.getAppIcon().getImage());
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         
         var bounds = getGraphicsConfiguration().getBounds();
@@ -34,14 +40,14 @@ public class MainFrame extends JFrame {
         int minHeight = (int) Math.max(200, Math.floor(bounds.height * 0.45));
         setMinimumSize(new Dimension(minWidth, minHeight));
 
-        setJMenuBar(menuBar());
+        setJMenuBar(createMenuBar());
 
         pack();
         setLocationRelativeTo(null);
         setVisible(true);
     }
 
-    private JMenuBar menuBar() {
+    private JMenuBar createMenuBar() {
         var bar = new JMenuBar();
 
         var file = new JMenu(i18n.getMessage("menu.file"));
@@ -49,6 +55,12 @@ public class MainFrame extends JFrame {
         bar.add(file);
 
         file.add(new JMenuItem(exitAction));
+
+        var help = new JMenu(i18n.getMessage("menu.help"));
+        help.setMnemonic(i18n.getMessage("menu.help.mnemonic").charAt(0));
+        bar.add(help);
+
+        help.add(new JMenuItem(aboutAction));
 
         return bar;
     }

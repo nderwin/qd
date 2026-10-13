@@ -1,6 +1,15 @@
 {
   "reflection": [
     {
+      "type": "com.formdev.flatlaf.icons.FlatHelpButtonIcon",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
       "type": "com.formdev.flatlaf.icons.FlatMenuArrowIcon",
       "methods": [
         {
@@ -20,6 +29,37 @@
     },
     {
       "type": "com.formdev.flatlaf.resources.Bundle"
+    },
+    {
+      "type": "com.formdev.flatlaf.ui.FlatButtonBorder",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "com.formdev.flatlaf.ui.FlatButtonUI",
+      "methods": [
+        {
+          "name": "createUI",
+          "parameterTypes": [
+            "javax.swing.JComponent"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "com.formdev.flatlaf.ui.FlatLabelUI",
+      "methods": [
+        {
+          "name": "createUI",
+          "parameterTypes": [
+            "javax.swing.JComponent"
+          ]
+        }
+      ]
     },
     {
       "type": "com.formdev.flatlaf.ui.FlatMenuBarBorder",
@@ -115,16 +155,25 @@
       ]
     },
     {
+      "type": "com.github.nderwin.qd.boundary.AboutAction"
+    },
+    {
+      "type": "com.github.nderwin.qd.boundary.AboutDialog"
+    },
+    {
       "type": "com.github.nderwin.qd.boundary.Application"
+    },
+    {
+      "type": "com.github.nderwin.qd.boundary.ExitAction"
+    },
+    {
+      "type": "com.github.nderwin.qd.boundary.IconManager"
     },
     {
       "type": "com.github.nderwin.qd.boundary.MainFrame"
     },
     {
       "type": "com.github.nderwin.qd.control.ApplicationExitEvent"
-    },
-    {
-      "type": "com.github.nderwin.qd.control.ExitAction"
     },
     {
       "type": "com.github.nderwin.qd.control.I18n"
@@ -692,6 +741,9 @@
       "type": "jakarta.enterprise.inject.Default"
     },
     {
+      "type": "jakarta.enterprise.inject.Instance"
+    },
+    {
       "type": "jakarta.inject.Inject"
     },
     {
@@ -845,6 +897,9 @@
       ]
     },
     {
+      "type": "java.awt.event.MouseMotionListener[]"
+    },
+    {
       "type": "java.awt.event.WindowFocusListener[]"
     },
     {
@@ -970,6 +1025,47 @@
       ]
     },
     {
+      "type": "java.awt.image.BufferedImage",
+      "jniAccessible": true,
+      "fields": [
+        {
+          "name": "colorModel"
+        },
+        {
+          "name": "imageType"
+        },
+        {
+          "name": "raster"
+        }
+      ],
+      "methods": [
+        {
+          "name": "getRGB",
+          "parameterTypes": [
+            "int",
+            "int",
+            "int",
+            "int",
+            "int[]",
+            "int",
+            "int"
+          ]
+        },
+        {
+          "name": "setRGB",
+          "parameterTypes": [
+            "int",
+            "int",
+            "int",
+            "int",
+            "int[]",
+            "int",
+            "int"
+          ]
+        }
+      ]
+    },
+    {
       "type": "java.awt.image.ColorModel",
       "jniAccessible": true,
       "fields": [
@@ -1029,6 +1125,9 @@
           "name": "allgrayopaque"
         },
         {
+          "name": "colorData"
+        },
+        {
           "name": "map_size"
         },
         {
@@ -1036,6 +1135,96 @@
         },
         {
           "name": "transparent_index"
+        }
+      ]
+    },
+    {
+      "type": "java.awt.image.Raster",
+      "jniAccessible": true,
+      "fields": [
+        {
+          "name": "dataBuffer"
+        },
+        {
+          "name": "height"
+        },
+        {
+          "name": "minX"
+        },
+        {
+          "name": "minY"
+        },
+        {
+          "name": "numBands"
+        },
+        {
+          "name": "numDataElements"
+        },
+        {
+          "name": "sampleModel"
+        },
+        {
+          "name": "sampleModelTranslateX"
+        },
+        {
+          "name": "sampleModelTranslateY"
+        },
+        {
+          "name": "width"
+        }
+      ]
+    },
+    {
+      "type": "java.awt.image.SampleModel",
+      "jniAccessible": true,
+      "fields": [
+        {
+          "name": "height"
+        },
+        {
+          "name": "width"
+        }
+      ],
+      "methods": [
+        {
+          "name": "getPixels",
+          "parameterTypes": [
+            "int",
+            "int",
+            "int",
+            "int",
+            "int[]",
+            "java.awt.image.DataBuffer"
+          ]
+        },
+        {
+          "name": "setPixels",
+          "parameterTypes": [
+            "int",
+            "int",
+            "int",
+            "int",
+            "int[]",
+            "java.awt.image.DataBuffer"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "java.awt.image.SinglePixelPackedSampleModel",
+      "jniAccessible": true,
+      "fields": [
+        {
+          "name": "bitMasks"
+        },
+        {
+          "name": "bitOffsets"
+        },
+        {
+          "name": "bitSizes"
+        },
+        {
+          "name": "maxBitSize"
         }
       ]
     },
@@ -1088,9 +1277,6 @@
       "jniAccessible": true,
       "fields": [
         {
-          "name": "inheritableThreadLocals"
-        },
-        {
           "name": "threadLocals"
         }
       ],
@@ -1140,6 +1326,9 @@
     },
     {
       "type": "javax.swing.Action"
+    },
+    {
+      "type": "javax.swing.JDialog"
     },
     {
       "type": "javax.swing.JFrame"
@@ -1222,6 +1411,9 @@
     },
     {
       "type": "jdk.internal.misc.Unsafe"
+    },
+    {
+      "type": "net.miginfocom.swing.MigLayout"
     },
     {
       "type": "org.jboss.logmanager.CopyOnWriteMap"
@@ -1320,6 +1512,9 @@
       "type": "sun.awt.X11.XContentWindow"
     },
     {
+      "type": "sun.awt.X11.XDialogPeer"
+    },
+    {
       "type": "sun.awt.X11.XErrorHandlerUtil",
       "jniAccessible": true,
       "methods": [
@@ -1394,6 +1589,56 @@
       "fields": [
         {
           "name": "pData"
+        }
+      ]
+    },
+    {
+      "type": "sun.awt.image.BufImgSurfaceData$ICMColorData",
+      "jniAccessible": true,
+      "fields": [
+        {
+          "name": "pData"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "long"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sun.awt.image.ImageRepresentation",
+      "jniAccessible": true,
+      "fields": [
+        {
+          "name": "numSrcLUT"
+        },
+        {
+          "name": "srcLUTtransIndex"
+        }
+      ]
+    },
+    {
+      "type": "sun.awt.image.IntegerComponentRaster",
+      "jniAccessible": true,
+      "fields": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "dataOffsets"
+        },
+        {
+          "name": "pixelStride"
+        },
+        {
+          "name": "scanlineStride"
+        },
+        {
+          "name": "type"
         }
       ]
     },
@@ -2176,6 +2421,9 @@
           ]
         }
       ]
+    },
+    {
+      "type": "sun.util.resources.cldr.CalendarData"
     }
   ],
   "resources": [
@@ -2235,6 +2483,9 @@
     },
     {
       "glob": "com/formdev/flatlaf/resources/Bundle_en_US.properties"
+    },
+    {
+      "glob": "icons/app-icon.png"
     },
     {
       "glob": "messages.properties"
