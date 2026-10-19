@@ -1,6 +1,5 @@
 package com.github.nderwin.qd.boundary;
 
-import com.formdev.flatlaf.FlatLaf;
 import com.github.nderwin.qd.control.I18n;
 import jakarta.annotation.PostConstruct;
 import jakarta.inject.Inject;
@@ -40,7 +39,7 @@ public class AboutPanel extends JPanel {
 
         // App Name and Version
         JLabel nameLabel = new JLabel(i18n.getMessage("app.title"));
-        nameLabel.setFont(new Font(FlatLaf.getPreferredFontFamily(), Font.BOLD, 16));
+        nameLabel.setFont(nameLabel.getFont().deriveFont(Font.BOLD, 16f));
         gbc.gridy = 1;
         gbc.insets = new Insets(0, 20, 5, 20);
         add(nameLabel, gbc);
