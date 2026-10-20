@@ -1274,6 +1274,7 @@
     },
     {
       "type": "java.lang.Thread",
+      "jniAccessible": true,
       "fields": [
         {
           "name": "inheritableThreadLocals"
@@ -1285,6 +1286,10 @@
       "methods": [
         {
           "name": "isVirtual",
+          "parameterTypes": []
+        },
+        {
+          "name": "yield",
           "parameterTypes": []
         }
       ]
@@ -1365,17 +1370,6 @@
       "type": "javax.swing.WindowConstants"
     },
     {
-      "type": "javax.swing.plaf.basic.BasicButtonListener",
-      "methods": [
-        {
-          "name": "loadActionMap",
-          "parameterTypes": [
-            "javax.swing.plaf.basic.LazyActionMap"
-          ]
-        }
-      ]
-    },
-    {
       "type": "javax.swing.plaf.basic.BasicGraphicsUtils",
       "methods": [
         {
@@ -1404,17 +1398,6 @@
     },
     {
       "type": "javax.swing.plaf.basic.BasicMenuItemUI",
-      "methods": [
-        {
-          "name": "loadActionMap",
-          "parameterTypes": [
-            "javax.swing.plaf.basic.LazyActionMap"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "javax.swing.plaf.basic.BasicMenuUI",
       "methods": [
         {
           "name": "loadActionMap",
