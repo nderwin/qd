@@ -43,6 +43,7 @@ public class AboutAction extends AbstractAction {
                     i18n.getMessage("dialog.about.title"),
                     true
             );
+            aboutDialog.setResizable(false);
             aboutDialog.setDefaultCloseOperation(HIDE_ON_CLOSE);
             aboutDialog.add(aboutPanel);
             aboutDialog.getRootPane().setDefaultButton(aboutPanel.getCloseButton());
