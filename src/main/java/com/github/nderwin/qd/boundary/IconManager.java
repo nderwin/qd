@@ -4,16 +4,10 @@ import com.github.nderwin.qd.control.I18n;
 import io.quarkus.logging.Log;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.FontMetrics;
-import java.awt.Graphics2D;
-import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.URL;
-import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
+
+import module java.desktop;
 
 @ApplicationScoped
 public class IconManager {
@@ -40,8 +34,8 @@ public class IconManager {
             return createPlaceholderIcon();
         }
 
-        try (InputStream is = imgUrl.openStream()) {
-            var image = ImageIO.read(is);
+        try {
+            var image = ImageIO.read(imgUrl);
             if (null != image) {
                 return new ImageIcon(image);
             }

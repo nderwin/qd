@@ -6,8 +6,8 @@ import jakarta.annotation.PostConstruct;
 import jakarta.enterprise.event.Event;
 import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
-import java.awt.event.ActionEvent;
-import javax.swing.AbstractAction;
+
+import module java.desktop;
 
 @Singleton
 public class ExitAction extends AbstractAction {

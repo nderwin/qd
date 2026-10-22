@@ -2,11 +2,11 @@ package com.github.nderwin.qd.control;
 
 import io.quarkus.logging.Log;
 import jakarta.enterprise.context.ApplicationScoped;
-import java.awt.event.KeyEvent;
 import java.util.Locale;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
-import javax.swing.KeyStroke;
+
+import module java.desktop;
 
 @ApplicationScoped
 public class I18n {
