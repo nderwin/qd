@@ -179,6 +179,27 @@
       "type": "com.github.nderwin.qd.control.I18n"
     },
     {
+      "type": "com.github.nderwin.qd.control.UserPreferencesStore"
+    },
+    {
+      "type": "com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
       "type": "com.sun.swing.internal.plaf.basic.resources.basic"
     },
     {
@@ -2484,10 +2505,16 @@
       "glob": "META-INF/services/java.net.spi.InetAddressResolverProvider"
     },
     {
+      "glob": "META-INF/services/java.nio.charset.spi.CharsetProvider"
+    },
+    {
       "glob": "META-INF/services/java.nio.file.spi.FileSystemProvider"
     },
     {
       "glob": "META-INF/services/java.time.zone.ZoneRulesProvider"
+    },
+    {
+      "glob": "META-INF/services/java.util.prefs.PreferencesFactory"
     },
     {
       "glob": "META-INF/services/java.util.spi.ResourceBundleControlProvider"
@@ -2506,6 +2533,12 @@
     },
     {
       "glob": "META-INF/services/javax.imageio.spi.ImageWriterSpi"
+    },
+    {
+      "glob": "META-INF/services/javax.xml.parsers.DocumentBuilderFactory"
+    },
+    {
+      "glob": "META-INF/services/javax.xml.transform.TransformerFactory"
     },
     {
       "glob": "META-INF/services/org.jboss.logmanager.ConfiguratorFactory"
@@ -2577,7 +2610,26 @@
       "glob": "sun/awt/resources/awt_en_US.properties"
     },
     {
+      "module": "java.xml",
+      "glob": "com/sun/org/apache/xml/internal/serializer/Encodings.properties"
+    },
+    {
+      "module": "java.xml",
+      "glob": "com/sun/org/apache/xml/internal/serializer/XMLEntities.properties"
+    },
+    {
+      "module": "java.xml",
+      "glob": "com/sun/org/apache/xml/internal/serializer/XMLEntities_en.properties"
+    },
+    {
+      "module": "java.xml",
+      "glob": "com/sun/org/apache/xml/internal/serializer/XMLEntities_en_US.properties"
+    },
+    {
       "bundle": "com.formdev.flatlaf.resources.Bundle"
+    },
+    {
+      "bundle": "com.sun.org.apache.xml.internal.serializer.XMLEntities"
     },
     {
       "bundle": "com.sun.swing.internal.plaf.basic.resources.basic"

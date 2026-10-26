@@ -5,15 +5,12 @@ import jakarta.annotation.PostConstruct;
 import jakarta.enterprise.inject.Instance;
 import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
-import java.awt.event.ActionEvent;
-import java.awt.event.KeyEvent;
-import javax.swing.AbstractAction;
-import javax.swing.JDialog;
-import javax.swing.KeyStroke;
 
 import static javax.swing.Action.MNEMONIC_KEY;
 import static javax.swing.JComponent.WHEN_IN_FOCUSED_WINDOW;
 import static javax.swing.WindowConstants.HIDE_ON_CLOSE;
+
+import module java.desktop;
 
 @Singleton
 public class AboutAction extends AbstractAction {
