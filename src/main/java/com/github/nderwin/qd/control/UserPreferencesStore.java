@@ -26,6 +26,8 @@ public class UserPreferencesStore {
 
     private static final String KEY_INIT = "window.main.init";
 
+    private static final String KEY_LAF = "lookandfeel";
+
     private final Preferences node;
 
     public UserPreferencesStore() {
@@ -64,6 +66,35 @@ public class UserPreferencesStore {
             node.flush();
         } catch (final BackingStoreException ex) {
             Log.warn("Failed to persist window geometry to OS preferences", ex);
+        }
+    }
+
+    public String loadLookAndFeel() {
+        var laf = node.get(KEY_LAF, null);
+        if (null == laf) {
+            return null;
+        }
+
+        try {
+            // make sure it exists
+            Class.forName(laf);
+
+            return laf;
+        } catch (final ClassNotFoundException ex) {
+            Log.warn("Failed to load Look and Feel from preferences", ex);
+
+            return null;
+        }
+
+    }
+
+    public void saveLookAndFeel(final String laf) {
+        node.put(KEY_LAF, laf);
+
+        try {
+            node.flush();
+        } catch (final BackingStoreException ex) {
+            Log.warn("Failed to persist Look and Feel to OS preferences", ex);
         }
     }
 

@@ -37,11 +37,18 @@ public class MainFrame extends JFrame {
     @Inject
     ExitAction exitAction;
 
+    @Inject
+    PreferencesAction preferencesAction;
+
     private JMenuItem aboutMenuItem;
 
     private JMenuItem exitMenuItem;
 
+    private JMenuItem preferencesMenuItem;
+
     private JMenu fileMenu;
+
+    private JMenu toolsMenu;
 
     private JMenu helpMenu;
 
@@ -332,6 +339,8 @@ public class MainFrame extends JFrame {
         menuBar = new JMenuBar();
         fileMenu = new JMenu();
         exitMenuItem = new JMenuItem();
+        toolsMenu = new JMenu();
+        preferencesMenuItem = new JMenuItem();
         helpMenu = new JMenu();
         aboutMenuItem = new JMenuItem();
 
@@ -347,6 +356,14 @@ public class MainFrame extends JFrame {
         fileMenu.add(exitMenuItem);
 
         menuBar.add(fileMenu);
+
+        toolsMenu.setMnemonic(i18n.getMnemonic("menu.tools.mnemonic"));
+        toolsMenu.setText(i18n.getMessage("menu.tools"));
+
+        preferencesMenuItem.setAction(preferencesAction);
+        toolsMenu.add(preferencesMenuItem);
+
+        menuBar.add(toolsMenu);
 
         helpMenu.setMnemonic(i18n.getMnemonic("menu.help.mnemonic"));
         helpMenu.setText(i18n.getMessage("menu.help"));
