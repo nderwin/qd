@@ -1,0 +1,7 @@
+---
+description: QD repository instructions
+globs: "**/*"
+alwaysApply: true
+---
+
+Read and follow `/AGENTS.md` at the repository root for all project-specific coding, build, architecture, and workflow rules. Do not duplicate or override its rules here.
