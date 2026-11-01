@@ -42,6 +42,7 @@ public class AboutAction extends AbstractAction {
             );
             aboutDialog.setResizable(false);
             aboutDialog.setDefaultCloseOperation(HIDE_ON_CLOSE);
+            SwingUtilities.updateComponentTreeUI(aboutPanel);
             aboutDialog.add(aboutPanel);
             aboutDialog.getRootPane().setDefaultButton(aboutPanel.getCloseButton());
 
@@ -53,6 +54,9 @@ public class AboutAction extends AbstractAction {
             );
 
             aboutDialog.pack();
+        } else {
+            SwingUtilities.updateComponentTreeUI(aboutDialog);
+            aboutDialog.validate();
         }
 
         aboutDialog.setLocationRelativeTo(mainFrame.get());

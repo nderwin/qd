@@ -46,7 +46,7 @@ Always use the Maven wrapper. Prefer non-interactive execution; the user cannot 
 
 ## Architecture rules
 
-- Keep BCE boundaries clean: `boundary` must not contain business logic; `control` must not import Swing.
+- Keep BCE boundaries clean: `boundary` must not contain business logic; `control` must not create Swing artifacts.
 - Look-and-feel changes go through `LafSupport.apply(...)` (never call `UIManager.setLookAndFeel` directly in UI classes). New L&Fs are registered in `LafSupport.installFlatLookAndFeels()`.
 - i18n goes through `I18n` (`getMessage`, `getMnemonic`, `getAccelerator`) plus `messages.properties`. Do not hard-code user-visible strings.
 - Window geometry persistence is subtle (normal/maximized/minimized tracking, multi-monitor fit, minimum sizes). Don't simplify or "clean up" that logic without running the app.

@@ -859,6 +859,35 @@
         {
             "type": "javax.swing.table.JTableHeader",
             "allPublicMethods": true
+        },
+        {
+            "type": "org.kordamp.ikonli.bootstrapicons.BootstrapIconsIkonHandler",
+            "allDeclaredConstructors": true
+        },
+        {
+            "type": "org.kordamp.ikonli.bootstrapicons.BootstrapIconsIkonProvider",
+            "allDeclaredConstructors": true
+        },
+        {
+            "type": "org.kordamp.ikonli.IkonliIkonResolver",
+            "allDeclaredConstructors": true
+        },
+        {
+            "type": "org.kordamp.ikonli.IkonHandler",
+            "allDeclaredMethods": true
+        },
+        {
+            "type": "org.kordamp.ikonli.IkonResolver",
+            "allDeclaredMethods": true
+        },
+        {
+            "type": "org.kordamp.ikonli.IkonProvider",
+            "allDeclaredMethods": true
+        },
+        {
+            "type": "org.kordamp.ikonli.swing.SwingFontLoader",
+            "allDeclaredConstructors": true,
+            "allDeclaredMethods": true
         }
     ],
     "resources": [

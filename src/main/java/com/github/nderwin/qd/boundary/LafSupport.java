@@ -7,13 +7,12 @@ import com.formdev.flatlaf.FlatLaf;
 import com.formdev.flatlaf.FlatLightLaf;
 import com.formdev.flatlaf.themes.FlatMacDarkLaf;
 import com.formdev.flatlaf.themes.FlatMacLightLaf;
+import com.github.nderwin.qd.spi.boundary.UIListener;
 import io.quarkus.logging.Log;
-import java.awt.Window;
+import jakarta.enterprise.inject.spi.CDI;
 import java.util.Arrays;
-import javax.swing.SwingUtilities;
-import javax.swing.UIManager;
-import javax.swing.UIManager.LookAndFeelInfo;
-import javax.swing.UnsupportedLookAndFeelException;
+
+import module java.desktop;
 
 public interface LafSupport {
 
@@ -30,9 +29,25 @@ public interface LafSupport {
         FlatMacDarkLaf.installLafInfo();
     }
 
-    static LookAndFeelInfo[] installed() {
+    static UIManager.LookAndFeelInfo[] installed() {
         Log.debug("L&Fs: " + Arrays.toString(UIManager.getInstalledLookAndFeels()));
         return UIManager.getInstalledLookAndFeels();
+    }
+
+    private static void restoreToolbarFloat(final Container container) {
+        if (null == container) {
+            return;
+        }
+
+        for (var component : container.getComponents()) {
+            if (component instanceof final JToolBar bar) {
+                bar.setFloatable(true);
+            }
+
+            if (component instanceof final Container child) {
+                restoreToolbarFloat(child);
+            }
+        }
     }
 
     static void apply(final String lafClassName) {
@@ -61,10 +76,15 @@ public interface LafSupport {
             } else {
                 for (var window : Window.getWindows()) {
                     SwingUtilities.updateComponentTreeUI(window);
+                    restoreToolbarFloat(window);
                     window.validate();
                     window.repaint();
                 }
+
             }
+
+            CDI.current().select(UIListener.class).stream()
+                    .forEach(l -> l.uiRefreshed());
         }
     }
 }
