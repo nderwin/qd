@@ -1,2644 +1,880 @@
 {
-  "reflection": [
-    {
-      "type": "com.formdev.flatlaf.icons.FlatHelpButtonIcon",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "com.formdev.flatlaf.icons.FlatMenuArrowIcon",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "com.formdev.flatlaf.icons.FlatMenuItemArrowIcon",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "com.formdev.flatlaf.resources.Bundle"
-    },
-    {
-      "type": "com.formdev.flatlaf.ui.FlatButtonBorder",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "com.formdev.flatlaf.ui.FlatButtonUI",
-      "methods": [
-        {
-          "name": "createUI",
-          "parameterTypes": [
-            "javax.swing.JComponent"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "com.formdev.flatlaf.ui.FlatLabelUI",
-      "methods": [
-        {
-          "name": "createUI",
-          "parameterTypes": [
-            "javax.swing.JComponent"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "com.formdev.flatlaf.ui.FlatMenuBarBorder",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "com.formdev.flatlaf.ui.FlatMenuBarUI",
-      "methods": [
-        {
-          "name": "createUI",
-          "parameterTypes": [
-            "javax.swing.JComponent"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "com.formdev.flatlaf.ui.FlatMenuItemBorder",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "com.formdev.flatlaf.ui.FlatMenuItemUI",
-      "methods": [
-        {
-          "name": "createUI",
-          "parameterTypes": [
-            "javax.swing.JComponent"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "com.formdev.flatlaf.ui.FlatMenuUI",
-      "methods": [
-        {
-          "name": "createUI",
-          "parameterTypes": [
-            "javax.swing.JComponent"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "com.formdev.flatlaf.ui.FlatPanelUI",
-      "methods": [
-        {
-          "name": "createUI",
-          "parameterTypes": [
-            "javax.swing.JComponent"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "com.formdev.flatlaf.ui.FlatPopupMenuBorder",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "com.formdev.flatlaf.ui.FlatPopupMenuUI",
-      "methods": [
-        {
-          "name": "createUI",
-          "parameterTypes": [
-            "javax.swing.JComponent"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "com.formdev.flatlaf.ui.FlatRootPaneUI",
-      "methods": [
-        {
-          "name": "createUI",
-          "parameterTypes": [
-            "javax.swing.JComponent"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "com.github.nderwin.qd.boundary.AboutAction"
-    },
-    {
-      "type": "com.github.nderwin.qd.boundary.AboutPanel"
-    },
-    {
-      "type": "com.github.nderwin.qd.boundary.Application"
-    },
-    {
-      "type": "com.github.nderwin.qd.boundary.ExitAction"
-    },
-    {
-      "type": "com.github.nderwin.qd.boundary.IconManager"
-    },
-    {
-      "type": "com.github.nderwin.qd.boundary.MainFrame"
-    },
-    {
-      "type": "com.github.nderwin.qd.control.ApplicationExitEvent"
-    },
-    {
-      "type": "com.github.nderwin.qd.control.I18n"
-    },
-    {
-      "type": "com.github.nderwin.qd.control.UserPreferencesStore"
-    },
-    {
-      "type": "com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "com.sun.swing.internal.plaf.basic.resources.basic"
-    },
-    {
-      "type": "io.quarkiverse.desktop.awt.DesktopLifecycle"
-    },
-    {
-      "type": "io.quarkiverse.desktop.awt.DesktopStartupEvent"
-    },
-    {
-      "type": "io.quarkiverse.desktop.awt.runtime.DesktopAwtRuntimeConfig"
-    },
-    {
-      "type": "io.quarkiverse.desktop.awt.runtime.DesktopAwtRuntimeConfig$$CMImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "io.smallrye.config.ConfigMappingContext"
-          ]
-        },
-        {
-          "name": "getProperties",
-          "parameterTypes": []
-        },
-        {
-          "name": "getSecrets",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "io.quarkiverse.desktop.awt.runtime.DesktopAwtRuntimeConfig$StartupEvent"
-    },
-    {
-      "type": "io.quarkiverse.desktop.awt.runtime.DesktopAwtRuntimeConfig$StartupEvent$$CMImpl"
-    },
-    {
-      "type": "io.quarkiverse.desktop.awt.runtime.DesktopUi"
-    },
-    {
-      "type": "io.quarkiverse.desktop.swing.runtime.DesktopSwingConfig"
-    },
-    {
-      "type": "io.quarkiverse.desktop.swing.runtime.DesktopSwingConfig$$CMImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "io.smallrye.config.ConfigMappingContext"
-          ]
-        },
-        {
-          "name": "getProperties",
-          "parameterTypes": []
-        },
-        {
-          "name": "getSecrets",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.arc.AsyncObserverExceptionHandler"
-    },
-    {
-      "type": "io.quarkus.arc.generator.Default_jakarta_enterprise_context_ApplicationScoped_ContextInstances"
-    },
-    {
-      "type": "io.quarkus.arc.impl.AbstractInstanceHandle"
-    },
-    {
-      "type": "io.quarkus.arc.impl.CurrentManagedContext$CurrentContextState",
-      "fields": [
-        {
-          "name": "state"
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.arc.impl.DefaultAsyncObserverExceptionHandler"
-    },
-    {
-      "type": "io.quarkus.arc.runtime.ConfigStaticInitValues"
-    },
-    {
-      "type": "io.quarkus.arc.setup.Default_ComponentsProvider"
-    },
-    {
-      "type": "io.quarkus.bootstrap.logging.EmptyLogConfiguratorFactory"
-    },
-    {
-      "type": "io.quarkus.bootstrap.logging.InitialConfigurator"
-    },
-    {
-      "type": "io.quarkus.runner.ApplicationImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.runner.GeneratedMain",
-      "methods": [
-        {
-          "name": "main",
-          "parameterTypes": [
-            "java.lang.String[]"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.runtime.ApplicationConfig"
-    },
-    {
-      "type": "io.quarkus.runtime.ApplicationConfig$$CMImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "io.smallrye.config.ConfigMappingContext"
-          ]
-        },
-        {
-          "name": "getProperties",
-          "parameterTypes": []
-        },
-        {
-          "name": "getSecrets",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.runtime.BannerRuntimeConfig"
-    },
-    {
-      "type": "io.quarkus.runtime.BannerRuntimeConfig$$CMImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "io.smallrye.config.ConfigMappingContext"
-          ]
-        },
-        {
-          "name": "getProperties",
-          "parameterTypes": []
-        },
-        {
-          "name": "getSecrets",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.runtime.ConfigConfig"
-    },
-    {
-      "type": "io.quarkus.runtime.ConfigConfig$$CMImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "io.smallrye.config.ConfigMappingContext"
-          ]
-        },
-        {
-          "name": "getProperties",
-          "parameterTypes": []
-        },
-        {
-          "name": "getSecrets",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.runtime.LaunchConfig"
-    },
-    {
-      "type": "io.quarkus.runtime.LaunchConfig$$CMImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "io.smallrye.config.ConfigMappingContext"
-          ]
-        },
-        {
-          "name": "getProperties",
-          "parameterTypes": []
-        },
-        {
-          "name": "getSecrets",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.runtime.LiveReloadConfig"
-    },
-    {
-      "type": "io.quarkus.runtime.LiveReloadConfig$$CMImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "io.smallrye.config.ConfigMappingContext"
-          ]
-        },
-        {
-          "name": "getProperties",
-          "parameterTypes": []
-        },
-        {
-          "name": "getSecrets",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.runtime.LocalesBuildTimeConfig"
-    },
-    {
-      "type": "io.quarkus.runtime.LocalesBuildTimeConfig$$CMImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "io.smallrye.config.ConfigMappingContext"
-          ]
-        },
-        {
-          "name": "getProperties",
-          "parameterTypes": []
-        },
-        {
-          "name": "getSecrets",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.runtime.StartupEvent"
-    },
-    {
-      "type": "io.quarkus.runtime.ThreadPoolConfig"
-    },
-    {
-      "type": "io.quarkus.runtime.ThreadPoolConfig$$CMImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "io.smallrye.config.ConfigMappingContext"
-          ]
-        },
-        {
-          "name": "getProperties",
-          "parameterTypes": []
-        },
-        {
-          "name": "getSecrets",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.runtime.configuration.CharsetConverter",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.runtime.configuration.InetSocketAddressConverter",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.runtime.configuration.MemorySize",
-      "methods": [
-        {
-          "name": "of",
-          "parameterTypes": [
-            "java.lang.String"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.runtime.console.ConsoleRuntimeConfig"
-    },
-    {
-      "type": "io.quarkus.runtime.console.ConsoleRuntimeConfig$$CMImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "io.smallrye.config.ConfigMappingContext"
-          ]
-        },
-        {
-          "name": "getProperties",
-          "parameterTypes": []
-        },
-        {
-          "name": "getSecrets",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.runtime.generated.RunTimeConfig",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.runtime.generated.StaticInitConfig",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.runtime.init.InitRuntimeConfig"
-    },
-    {
-      "type": "io.quarkus.runtime.init.InitRuntimeConfig$$CMImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "io.smallrye.config.ConfigMappingContext"
-          ]
-        },
-        {
-          "name": "getProperties",
-          "parameterTypes": []
-        },
-        {
-          "name": "getSecrets",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.runtime.init.InitRuntimeConfig$BooleanConverter",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.runtime.logging.InheritableLevel"
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LevelConverter",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LogBuildTimeConfig"
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LogBuildTimeConfig$$CMImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "io.smallrye.config.ConfigMappingContext"
-          ]
-        },
-        {
-          "name": "getProperties",
-          "parameterTypes": []
-        },
-        {
-          "name": "getSecrets",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LogBuildTimeConfig$CategoryBuildTimeConfig"
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LogBuildTimeConfig$CategoryBuildTimeConfig$$CMImpl"
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LogRuntimeConfig"
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LogRuntimeConfig$$CMImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "io.smallrye.config.ConfigMappingContext"
-          ]
-        },
-        {
-          "name": "getProperties",
-          "parameterTypes": []
-        },
-        {
-          "name": "getSecrets",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LogRuntimeConfig$AsyncConfig"
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LogRuntimeConfig$AsyncConfig$$CMImpl"
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LogRuntimeConfig$CategoryConfig"
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LogRuntimeConfig$CategoryConfig$$CMImpl"
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LogRuntimeConfig$CleanupFilterConfig"
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LogRuntimeConfig$CleanupFilterConfig$$CMImpl",
-      "methods": [
-        {
-          "name": "getProperties",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LogRuntimeConfig$ConsoleConfig"
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LogRuntimeConfig$ConsoleConfig$$CMImpl"
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LogRuntimeConfig$FileConfig"
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LogRuntimeConfig$FileConfig$$CMImpl"
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LogRuntimeConfig$FileConfig$RotationConfig"
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LogRuntimeConfig$FileConfig$RotationConfig$$CMImpl"
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LogRuntimeConfig$SocketConfig"
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LogRuntimeConfig$SocketConfig$$CMImpl"
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LogRuntimeConfig$SyslogConfig"
-    },
-    {
-      "type": "io.quarkus.runtime.logging.LogRuntimeConfig$SyslogConfig$$CMImpl"
-    },
-    {
-      "type": "io.quarkus.runtime.shutdown.ShutdownConfig"
-    },
-    {
-      "type": "io.quarkus.runtime.shutdown.ShutdownConfig$$CMImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "io.smallrye.config.ConfigMappingContext"
-          ]
-        },
-        {
-          "name": "getProperties",
-          "parameterTypes": []
-        },
-        {
-          "name": "getSecrets",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "io.quarkus.value.registry.ValueRegistry"
-    },
-    {
-      "type": "io.smallrye.common.net.CidrAddress"
-    },
-    {
-      "type": "io.smallrye.config._private.ConfigLogging_$logger",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "org.jboss.logging.Logger"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "jakarta.enterprise.context.BeforeDestroyed",
-      "methods": [
-        {
-          "name": "value",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "jakarta.enterprise.context.Destroyed",
-      "methods": [
-        {
-          "name": "value",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "jakarta.enterprise.context.Initialized",
-      "methods": [
-        {
-          "name": "value",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "jakarta.enterprise.event.Event"
-    },
-    {
-      "type": "jakarta.enterprise.inject.Any"
-    },
-    {
-      "type": "jakarta.enterprise.inject.Default"
-    },
-    {
-      "type": "jakarta.enterprise.inject.Instance"
-    },
-    {
-      "type": "jakarta.inject.Inject"
-    },
-    {
-      "type": "java.awt.AlphaComposite",
-      "jniAccessible": true,
-      "fields": [
-        {
-          "name": "extraAlpha"
-        },
-        {
-          "name": "rule"
-        }
-      ]
-    },
-    {
-      "type": "java.awt.Color",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "getRGB",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "java.awt.Component",
-      "jniAccessible": true,
-      "fields": [
+    "reflection": [
         {
-          "name": "appContext"
+            "type": "com.formdev.flatlaf.FlatDarculaLaf",
+            "methods": [{
+                    "name": "<init>",
+                    "parameterTypes": []
+                }]
         },
         {
-          "name": "background"
+            "type": "com.formdev.flatlaf.FlatDarkLaf",
+            "methods": [{
+                    "name": "<init>",
+                    "parameterTypes": []
+                }]
         },
         {
-          "name": "foreground"
+            "type": "com.formdev.flatlaf.FlatIntelliJLaf",
+            "methods": [{
+                    "name": "<init>",
+                    "parameterTypes": []
+                }]
         },
         {
-          "name": "graphicsConfig"
+            "type": "com.formdev.flatlaf.FlatLightLaf",
+            "methods": [{
+                    "name": "<init>",
+                    "parameterTypes": []
+                }]
         },
         {
-          "name": "height"
+            "type": "com.formdev.flatlaf.icons.FlatAbstractIcon",
+            "fields": [{
+                    "name": "color"
+                }, {
+                    "name": "scale"
+                }]
         },
         {
-          "name": "isPacked"
+            "type": "com.formdev.flatlaf.icons.FlatAscendingSortIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "name"
+            "type": "com.formdev.flatlaf.icons.FlatCapsLockIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "peer"
+            "type": "com.formdev.flatlaf.icons.FlatCheckBoxIcon",
+            "allDeclaredConstructors": true,
+            "allDeclaredFields": true
         },
         {
-          "name": "width"
+            "type": "com.formdev.flatlaf.icons.FlatCheckBoxMenuItemIcon",
+            "allDeclaredConstructors": true,
+            "allDeclaredFields": true
         },
         {
-          "name": "x"
+            "type": "com.formdev.flatlaf.icons.FlatClearIcon",
+            "allDeclaredConstructors": true
         },
-        {
-          "name": "y"
-        }
-      ],
-      "methods": [
         {
-          "name": "getLocationOnScreen_NoTreeLock",
-          "parameterTypes": []
+            "type": "com.formdev.flatlaf.icons.FlatDescendingSortIcon",
+            "allDeclaredConstructors": true
         },
-        {
-          "name": "getParent_NoClientCode",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "java.awt.GraphicsEnvironment",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "isHeadless",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "java.awt.Rectangle",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "int",
-            "int",
-            "int",
-            "int"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "java.awt.SequencedEvent"
-    },
-    {
-      "type": "java.awt.event.KeyEvent",
-      "jniAccessible": true,
-      "fields": [
         {
-          "name": "VK_CONTEXT_MENU"
+            "type": "com.formdev.flatlaf.icons.FlatFileChooserDetailsViewIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "VK_DOWN"
+            "type": "com.formdev.flatlaf.icons.FlatFileChooserHomeFolderIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "VK_ENTER"
+            "type": "com.formdev.flatlaf.icons.FlatFileChooserListViewIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "VK_ESCAPE"
+            "type": "com.formdev.flatlaf.icons.FlatFileChooserNewFolderIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "VK_F10"
+            "type": "com.formdev.flatlaf.icons.FlatFileChooserUpFolderIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "VK_KP_DOWN"
+            "type": "com.formdev.flatlaf.icons.FlatFileViewComputerIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "VK_KP_LEFT"
+            "type": "com.formdev.flatlaf.icons.FlatFileViewDirectoryIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "VK_KP_RIGHT"
+            "type": "com.formdev.flatlaf.icons.FlatFileViewFileIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "VK_KP_UP"
+            "type": "com.formdev.flatlaf.icons.FlatFileViewFloppyDriveIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "VK_LEFT"
+            "type": "com.formdev.flatlaf.icons.FlatFileViewHardDriveIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "VK_RIGHT"
+            "type": "com.formdev.flatlaf.icons.FlatHelpButtonIcon",
+            "allDeclaredConstructors": true,
+            "allDeclaredFields": true
         },
         {
-          "name": "VK_SPACE"
+            "type": "com.formdev.flatlaf.icons.FlatInternalFrameCloseIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "VK_UP"
+            "type": "com.formdev.flatlaf.icons.FlatInternalFrameIconifyIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "VK_X"
+            "type": "com.formdev.flatlaf.icons.FlatInternalFrameMaximizeIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "isProxyActive"
-        }
-      ]
-    },
-    {
-      "type": "java.awt.event.MouseMotionListener[]"
-    },
-    {
-      "type": "java.awt.event.WindowFocusListener[]"
-    },
-    {
-      "type": "java.awt.geom.AffineTransform",
-      "jniAccessible": true,
-      "fields": [
-        {
-          "name": "m00"
+            "type": "com.formdev.flatlaf.icons.FlatInternalFrameRestoreIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "m01"
+            "type": "com.formdev.flatlaf.icons.FlatMenuArrowIcon",
+            "allDeclaredConstructors": true,
+            "allDeclaredFields": true
         },
         {
-          "name": "m02"
+            "type": "com.formdev.flatlaf.icons.FlatMenuItemArrowIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "m10"
+            "type": "com.formdev.flatlaf.icons.FlatOptionPaneErrorIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "m11"
+            "type": "com.formdev.flatlaf.icons.FlatOptionPaneInformationIcon",
+            "allDeclaredConstructors": true
         },
-        {
-          "name": "m12"
-        }
-      ]
-    },
-    {
-      "type": "java.awt.geom.GeneralPath",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        },
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "int",
-            "byte[]",
-            "int",
-            "float[]",
-            "int"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "java.awt.geom.Path2D",
-      "jniAccessible": true,
-      "fields": [
         {
-          "name": "numTypes"
+            "type": "com.formdev.flatlaf.icons.FlatOptionPaneQuestionIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "pointTypes"
+            "type": "com.formdev.flatlaf.icons.FlatOptionPaneWarningIcon",
+            "allDeclaredConstructors": true
         },
-        {
-          "name": "windingRule"
-        }
-      ]
-    },
-    {
-      "type": "java.awt.geom.Path2D$Float",
-      "jniAccessible": true,
-      "fields": [
-        {
-          "name": "floatCoords"
-        }
-      ]
-    },
-    {
-      "type": "java.awt.geom.Point2D$Float",
-      "jniAccessible": true,
-      "fields": [
         {
-          "name": "x"
+            "type": "com.formdev.flatlaf.icons.FlatRadioButtonIcon",
+            "allDeclaredConstructors": true,
+            "allDeclaredFields": true
         },
-        {
-          "name": "y"
-        }
-      ],
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "float",
-            "float"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "java.awt.geom.Rectangle2D$Float",
-      "jniAccessible": true,
-      "fields": [
         {
-          "name": "height"
+            "type": "com.formdev.flatlaf.icons.FlatRadioButtonMenuItemIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "width"
+            "type": "com.formdev.flatlaf.icons.FlatRevealIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "x"
+            "type": "com.formdev.flatlaf.icons.FlatTabbedPaneCloseIcon",
+            "allDeclaredConstructors": true,
+            "allDeclaredFields": true
         },
-        {
-          "name": "y"
-        }
-      ],
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        },
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "float",
-            "float",
-            "float",
-            "float"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "java.awt.image.BufferedImage",
-      "jniAccessible": true,
-      "fields": [
         {
-          "name": "colorModel"
+            "type": "com.formdev.flatlaf.icons.FlatTreeClosedIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "imageType"
+            "type": "com.formdev.flatlaf.icons.FlatTreeCollapsedIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "raster"
-        }
-      ],
-      "methods": [
-        {
-          "name": "getRGB",
-          "parameterTypes": [
-            "int",
-            "int",
-            "int",
-            "int",
-            "int[]",
-            "int",
-            "int"
-          ]
-        },
-        {
-          "name": "setRGB",
-          "parameterTypes": [
-            "int",
-            "int",
-            "int",
-            "int",
-            "int[]",
-            "int",
-            "int"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "java.awt.image.ColorModel",
-      "jniAccessible": true,
-      "fields": [
-        {
-          "name": "colorSpace"
+            "type": "com.formdev.flatlaf.icons.FlatTreeExpandedIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "colorSpaceType"
+            "type": "com.formdev.flatlaf.icons.FlatTreeLeafIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "isAlphaPremultiplied"
+            "type": "com.formdev.flatlaf.icons.FlatTreeOpenIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "is_sRGB"
+            "type": "com.formdev.flatlaf.icons.FlatWindowCloseIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "nBits"
+            "type": "com.formdev.flatlaf.icons.FlatWindowIconifyIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "numComponents"
+            "type": "com.formdev.flatlaf.icons.FlatWindowMaximizeIcon",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "supportsAlpha"
+            "type": "com.formdev.flatlaf.icons.FlatWindowRestoreIcon",
+            "allDeclaredConstructors": true
         },
-        {
-          "name": "transparency"
-        }
-      ],
-      "methods": [
-        {
-          "name": "getRGBdefault",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "java.awt.image.DirectColorModel",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "int",
-            "int",
-            "int",
-            "int",
-            "int"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "java.awt.image.IndexColorModel",
-      "jniAccessible": true,
-      "fields": [
         {
-          "name": "allgrayopaque"
+            "type": "com.formdev.flatlaf.themes.FlatMacDarkLaf",
+            "methods": [{
+                    "name": "<init>",
+                    "parameterTypes": []
+                }]
         },
         {
-          "name": "colorData"
+            "type": "com.formdev.flatlaf.themes.FlatMacLightLaf",
+            "methods": [{
+                    "name": "<init>",
+                    "parameterTypes": []
+                }]
         },
         {
-          "name": "map_size"
+            "type": "com.formdev.flatlaf.ui.FlatBorder",
+            "allDeclaredFields": true
         },
         {
-          "name": "rgb"
+            "type": "com.formdev.flatlaf.ui.FlatButtonBorder",
+            "allDeclaredConstructors": true,
+            "allDeclaredFields": true
         },
-        {
-          "name": "transparent_index"
-        }
-      ]
-    },
-    {
-      "type": "java.awt.image.Raster",
-      "jniAccessible": true,
-      "fields": [
         {
-          "name": "dataBuffer"
+            "type": "com.formdev.flatlaf.ui.FlatButtonUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
         },
         {
-          "name": "height"
+            "type": "com.formdev.flatlaf.ui.FlatCheckBoxMenuItemUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }]
         },
         {
-          "name": "minX"
+            "type": "com.formdev.flatlaf.ui.FlatCheckBoxUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }]
         },
         {
-          "name": "minY"
+            "type": "com.formdev.flatlaf.ui.FlatColorChooserUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }]
         },
         {
-          "name": "numBands"
+            "type": "com.formdev.flatlaf.ui.FlatComboBoxUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
         },
         {
-          "name": "numDataElements"
+            "type": "com.formdev.flatlaf.ui.FlatDesktopIconUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }]
         },
         {
-          "name": "sampleModel"
+            "type": "com.formdev.flatlaf.ui.FlatDesktopPaneUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }]
         },
         {
-          "name": "sampleModelTranslateX"
+            "type": "com.formdev.flatlaf.ui.FlatDropShadowBorder",
+            "allDeclaredFields": true
         },
         {
-          "name": "sampleModelTranslateY"
+            "type": "com.formdev.flatlaf.ui.FlatEditorPaneUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
         },
-        {
-          "name": "width"
-        }
-      ]
-    },
-    {
-      "type": "java.awt.image.SampleModel",
-      "jniAccessible": true,
-      "fields": [
         {
-          "name": "height"
+            "type": "com.formdev.flatlaf.ui.FlatEmptyBorder",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "width"
-        }
-      ],
-      "methods": [
-        {
-          "name": "getPixels",
-          "parameterTypes": [
-            "int",
-            "int",
-            "int",
-            "int",
-            "int[]",
-            "java.awt.image.DataBuffer"
-          ]
-        },
-        {
-          "name": "setPixels",
-          "parameterTypes": [
-            "int",
-            "int",
-            "int",
-            "int",
-            "int[]",
-            "java.awt.image.DataBuffer"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "java.awt.image.SinglePixelPackedSampleModel",
-      "jniAccessible": true,
-      "fields": [
+            "type": "com.formdev.flatlaf.ui.FlatFileChooserUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }]
+        },
         {
-          "name": "bitMasks"
+            "type": "com.formdev.flatlaf.ui.FlatFormattedTextFieldUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }]
         },
         {
-          "name": "bitOffsets"
+            "type": "com.formdev.flatlaf.ui.FlatInternalFrameUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }]
         },
         {
-          "name": "bitSizes"
+            "type": "com.formdev.flatlaf.ui.FlatInternalFrameUI$FlatInternalFrameBorder",
+            "allDeclaredConstructors": true,
+            "allDeclaredFields": true
         },
         {
-          "name": "maxBitSize"
-        }
-      ]
-    },
-    {
-      "type": "java.io.Console",
-      "methods": [
-        {
-          "name": "isTerminal",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "java.lang.Boolean",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "getBoolean",
-          "parameterTypes": [
-            "java.lang.String"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "java.lang.ClassLoader",
-      "fields": [
-        {
-          "name": "classLoaderValueMap"
-        }
-      ]
-    },
-    {
-      "type": "java.lang.String[]"
-    },
-    {
-      "type": "java.lang.System",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "load",
-          "parameterTypes": [
-            "java.lang.String"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "java.lang.Thread",
-      "jniAccessible": true,
-      "fields": [
+            "type": "com.formdev.flatlaf.ui.FlatLabelUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
+        },
         {
-          "name": "inheritableThreadLocals"
+            "type": "com.formdev.flatlaf.ui.FlatListCellBorder$Default",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "threadLocals"
-        }
-      ],
-      "methods": [
+            "type": "com.formdev.flatlaf.ui.FlatListCellBorder$Focused",
+            "allDeclaredConstructors": true
+        },
         {
-          "name": "isVirtual",
-          "parameterTypes": []
+            "type": "com.formdev.flatlaf.ui.FlatListCellBorder$Selected",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "yield",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "java.net.InetAddress"
-    },
-    {
-      "type": "java.net.InetSocketAddress"
-    },
-    {
-      "type": "java.nio.charset.Charset"
-    },
-    {
-      "type": "java.nio.file.Path"
-    },
-    {
-      "type": "java.time.Duration"
-    },
-    {
-      "type": "java.time.ZoneId"
-    },
-    {
-      "type": "java.util.Locale"
-    },
-    {
-      "type": "java.util.logging.Level"
-    },
-    {
-      "type": "java.util.regex.Pattern"
-    },
-    {
-      "type": "javax.accessibility.Accessible"
-    },
-    {
-      "type": "javax.imageio.spi.ImageReaderSpi"
-    },
-    {
-      "type": "javax.imageio.spi.ImageWriterSpi"
-    },
-    {
-      "type": "javax.swing.AbstractAction"
-    },
-    {
-      "type": "javax.swing.Action"
-    },
-    {
-      "type": "javax.swing.JComponent"
-    },
-    {
-      "type": "javax.swing.JFrame"
-    },
-    {
-      "type": "javax.swing.JPanel"
-    },
-    {
-      "type": "javax.swing.PopupFactory",
-      "methods": [
-        {
-          "name": "getPopup",
-          "parameterTypes": [
-            "java.awt.Component",
-            "java.awt.Component",
-            "int",
-            "int",
-            "boolean"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "javax.swing.RootPaneContainer"
-    },
-    {
-      "type": "javax.swing.TransferHandler$HasGetTransferHandler"
-    },
-    {
-      "type": "javax.swing.WindowConstants"
-    },
-    {
-      "type": "javax.swing.plaf.basic.BasicGraphicsUtils",
-      "methods": [
-        {
-          "name": "drawStringUnderlineCharAt",
-          "parameterTypes": [
-            "javax.swing.JComponent",
-            "java.awt.Graphics2D",
-            "java.lang.String",
-            "int",
-            "float",
-            "float"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "javax.swing.plaf.basic.BasicMenuBarUI",
-      "methods": [
-        {
-          "name": "loadActionMap",
-          "parameterTypes": [
-            "javax.swing.plaf.basic.LazyActionMap"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "javax.swing.plaf.basic.BasicMenuItemUI",
-      "methods": [
-        {
-          "name": "loadActionMap",
-          "parameterTypes": [
-            "javax.swing.plaf.basic.LazyActionMap"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "javax.swing.plaf.basic.BasicPopupMenuUI",
-      "methods": [
-        {
-          "name": "loadActionMap",
-          "parameterTypes": [
-            "javax.swing.plaf.basic.LazyActionMap"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "jdk.internal.jrtfs.JrtFileSystemProvider"
-    },
-    {
-      "type": "jdk.internal.misc.Unsafe"
-    },
-    {
-      "type": "net.miginfocom.swing.MigLayout"
-    },
-    {
-      "type": "org.jboss.logmanager.CopyOnWriteMap"
-    },
-    {
-      "type": "org.jboss.logmanager.ExtHandler"
-    },
-    {
-      "type": "org.jboss.logmanager.JBossLoggerFinder"
-    },
-    {
-      "type": "org.jboss.logmanager.LogManager"
-    },
-    {
-      "type": "org.jboss.logmanager.Logger$AttachmentKey"
-    },
-    {
-      "type": "org.jboss.logmanager.LoggerNode"
-    },
-    {
-      "type": "org.jboss.logmanager.StandardOutputStreams"
-    },
-    {
-      "type": "org.jboss.logmanager.configuration.DefaultConfiguratorFactory"
-    },
-    {
-      "type": "org.jboss.threads.Messages_$logger",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "org.jboss.logging.Logger"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "org.jboss.threads.Messages_$logger_en"
-    },
-    {
-      "type": "org.jboss.threads.Messages_$logger_en_US"
-    },
-    {
-      "type": "sun.awt.SunHints",
-      "jniAccessible": true,
-      "fields": [
-        {
-          "name": "INTVAL_STROKE_PURE"
-        }
-      ]
-    },
-    {
-      "type": "sun.awt.SunToolkit",
-      "jniAccessible": true,
-      "methods": [
+            "type": "com.formdev.flatlaf.ui.FlatListUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
+        },
         {
-          "name": "awtLock",
-          "parameterTypes": []
+            "type": "com.formdev.flatlaf.ui.FlatMarginBorder",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "awtLockNotify",
-          "parameterTypes": []
+            "type": "com.formdev.flatlaf.ui.FlatMenuBarBorder",
+            "allDeclaredConstructors": true,
+            "allDeclaredFields": true
         },
         {
-          "name": "awtLockNotifyAll",
-          "parameterTypes": []
+            "type": "com.formdev.flatlaf.ui.FlatMenuBarUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
         },
         {
-          "name": "awtLockWait",
-          "parameterTypes": [
-            "long"
-          ]
+            "type": "com.formdev.flatlaf.ui.FlatMenuItemBorder",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "awtUnlock",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "sun.awt.X11.XBaseWindow",
-      "jniAccessible": true,
-      "fields": [
-        {
-          "name": "window"
-        }
-      ],
-      "methods": [
-        {
-          "name": "getWindow",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "sun.awt.X11.XContentWindow"
-    },
-    {
-      "type": "sun.awt.X11.XDialogPeer"
-    },
-    {
-      "type": "sun.awt.X11.XErrorHandlerUtil",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "init",
-          "parameterTypes": [
-            "long"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.awt.X11.XFramePeer"
-    },
-    {
-      "type": "sun.awt.X11.XToolkit",
-      "jniAccessible": true,
-      "fields": [
-        {
-          "name": "modLockIsShiftLock"
-        },
-        {
-          "name": "numLockMask"
-        }
-      ]
-    },
-    {
-      "type": "sun.awt.X11.XWindow",
-      "jniAccessible": true,
-      "fields": [
+            "type": "com.formdev.flatlaf.ui.FlatMenuItemRenderer",
+            "allDeclaredFields": true
+        },
         {
-          "name": "drawState"
+            "type": "com.formdev.flatlaf.ui.FlatMenuItemUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }]
         },
         {
-          "name": "graphicsConfig"
+            "type": "com.formdev.flatlaf.ui.FlatMenuUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }]
         },
         {
-          "name": "target"
-        }
-      ]
-    },
-    {
-      "type": "sun.awt.X11.XWindowPeer"
-    },
-    {
-      "type": "sun.awt.X11GraphicsConfig",
-      "jniAccessible": true,
-      "fields": [
-        {
-          "name": "aData"
-        },
-        {
-          "name": "bitsPerPixel"
-        }
-      ]
-    },
-    {
-      "type": "sun.awt.X11GraphicsDevice",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "addDoubleBufferVisual",
-          "parameterTypes": [
-            "int"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.awt.X11InputMethodBase",
-      "jniAccessible": true,
-      "fields": [
-        {
-          "name": "pData"
-        }
-      ]
-    },
-    {
-      "type": "sun.awt.image.BufImgSurfaceData$ICMColorData",
-      "jniAccessible": true,
-      "fields": [
-        {
-          "name": "pData"
-        }
-      ],
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "long"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.awt.image.ByteComponentRaster",
-      "jniAccessible": true,
-      "fields": [
+            "type": "com.formdev.flatlaf.ui.FlatOptionPaneUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }]
+        },
         {
-          "name": "data"
+            "type": "com.formdev.flatlaf.ui.FlatPanelUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
         },
         {
-          "name": "dataOffsets"
+            "type": "com.formdev.flatlaf.ui.FlatPasswordFieldUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
         },
         {
-          "name": "pixelStride"
+            "type": "com.formdev.flatlaf.ui.FlatPopupMenuBorder",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "scanlineStride"
+            "type": "com.formdev.flatlaf.ui.FlatPopupMenuSeparatorUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }]
         },
         {
-          "name": "type"
-        }
-      ]
-    },
-    {
-      "type": "sun.awt.image.IntegerComponentRaster",
-      "jniAccessible": true,
-      "fields": [
+            "type": "com.formdev.flatlaf.ui.FlatPopupMenuUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
+        },
         {
-          "name": "data"
+            "type": "com.formdev.flatlaf.ui.FlatProgressBarUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
         },
         {
-          "name": "dataOffsets"
+            "type": "com.formdev.flatlaf.ui.FlatRadioButtonMenuItemUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }]
         },
         {
-          "name": "pixelStride"
+            "type": "com.formdev.flatlaf.ui.FlatRadioButtonUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
         },
         {
-          "name": "scanlineStride"
+            "type": "com.formdev.flatlaf.ui.FlatRootPaneUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }]
         },
         {
-          "name": "type"
-        }
-      ]
-    },
-    {
-      "type": "sun.font.CharToGlyphMapper",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "charToGlyph",
-          "parameterTypes": [
-            "int"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.font.Font2D",
-      "jniAccessible": true,
-      "methods": [
+            "type": "com.formdev.flatlaf.ui.FlatRootPaneUI$FlatWindowBorder",
+            "allDeclaredConstructors": true
+        },
         {
-          "name": "canDisplay",
-          "parameterTypes": [
-            "char"
-          ]
+            "type": "com.formdev.flatlaf.ui.FlatRoundBorder",
+            "allDeclaredConstructors": true,
+            "allDeclaredFields": true
         },
         {
-          "name": "charToGlyphRaw",
-          "parameterTypes": [
-            "int"
-          ]
+            "type": "com.formdev.flatlaf.ui.FlatScrollBarUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
         },
         {
-          "name": "charToVariationGlyphRaw",
-          "parameterTypes": [
-            "int",
-            "int"
-          ]
+            "type": "com.formdev.flatlaf.ui.FlatScrollPaneBorder",
+            "allDeclaredConstructors": true,
+            "allDeclaredFields": true
         },
         {
-          "name": "getMapper",
-          "parameterTypes": []
+            "type": "com.formdev.flatlaf.ui.FlatScrollPaneUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
         },
         {
-          "name": "getTableBytes",
-          "parameterTypes": [
-            "int"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.font.FontStrike",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "getGlyphMetrics",
-          "parameterTypes": [
-            "int"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.font.FontUtilities",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "debugFonts",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "sun.font.FreetypeFontScaler",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "invalidateScaler",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "sun.font.GlyphList",
-      "jniAccessible": true,
-      "fields": [
+            "type": "com.formdev.flatlaf.ui.FlatSeparatorUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
+        },
         {
-          "name": "gposx"
+            "type": "com.formdev.flatlaf.ui.FlatSliderUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
         },
         {
-          "name": "gposy"
+            "type": "com.formdev.flatlaf.ui.FlatSpinnerUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
         },
         {
-          "name": "images"
+            "type": "com.formdev.flatlaf.ui.FlatSplitPaneUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
         },
         {
-          "name": "lcdRGBOrder"
+            "type": "com.formdev.flatlaf.ui.FlatSplitPaneUI$FlatSplitPaneDivider",
+            "allDeclaredFields": true
         },
         {
-          "name": "lcdSubPixPos"
+            "type": "com.formdev.flatlaf.ui.FlatTabbedPaneUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
         },
         {
-          "name": "len"
+            "type": "com.formdev.flatlaf.ui.FlatTableCellBorder$Default",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "positions"
+            "type": "com.formdev.flatlaf.ui.FlatTableCellBorder$Focused",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "usePositions"
-        }
-      ]
-    },
-    {
-      "type": "sun.font.PhysicalStrike",
-      "jniAccessible": true,
-      "fields": [
-        {
-          "name": "pScalerContext"
-        }
-      ],
-      "methods": [
-        {
-          "name": "adjustPoint",
-          "parameterTypes": [
-            "java.awt.geom.Point2D$Float"
-          ]
-        },
-        {
-          "name": "getGlyphPoint",
-          "parameterTypes": [
-            "int",
-            "int"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.font.StrikeMetrics",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "float",
-            "float",
-            "float",
-            "float",
-            "float",
-            "float",
-            "float",
-            "float",
-            "float",
-            "float"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.font.TrueTypeFont",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "readBlock",
-          "parameterTypes": [
-            "java.nio.ByteBuffer",
-            "int",
-            "int"
-          ]
-        },
-        {
-          "name": "readBytes",
-          "parameterTypes": [
-            "int",
-            "int"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.font.Type1Font",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "readFile",
-          "parameterTypes": [
-            "java.nio.ByteBuffer"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.Disposer",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "addRecord",
-          "parameterTypes": [
-            "java.lang.Object",
-            "long",
-            "long"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.InvalidPipeException",
-      "jniAccessible": true
-    },
-    {
-      "type": "sun.java2d.NullSurfaceData",
-      "jniAccessible": true
-    },
-    {
-      "type": "sun.java2d.SunGraphics2D",
-      "jniAccessible": true,
-      "fields": [
+            "type": "com.formdev.flatlaf.ui.FlatTableCellBorder$Selected",
+            "allDeclaredConstructors": true
+        },
         {
-          "name": "clipRegion"
+            "type": "com.formdev.flatlaf.ui.FlatTableHeaderBorder",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "composite"
+            "type": "com.formdev.flatlaf.ui.FlatTableHeaderUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
         },
         {
-          "name": "eargb"
+            "type": "com.formdev.flatlaf.ui.FlatTableUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
         },
         {
-          "name": "lcdTextContrast"
+            "type": "com.formdev.flatlaf.ui.FlatTextAreaUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
         },
         {
-          "name": "pixel"
+            "type": "com.formdev.flatlaf.ui.FlatTextBorder",
+            "allDeclaredConstructors": true,
+            "allDeclaredFields": true
         },
         {
-          "name": "strokeHint"
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.SurfaceData",
-      "jniAccessible": true,
-      "fields": [
+            "type": "com.formdev.flatlaf.ui.FlatTextFieldUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
+        },
         {
-          "name": "pData"
+            "type": "com.formdev.flatlaf.ui.FlatTextPaneUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
         },
         {
-          "name": "valid"
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.Blit",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "long",
-            "sun.java2d.loops.SurfaceType",
-            "sun.java2d.loops.CompositeType",
-            "sun.java2d.loops.SurfaceType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.BlitBg",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "long",
-            "sun.java2d.loops.SurfaceType",
-            "sun.java2d.loops.CompositeType",
-            "sun.java2d.loops.SurfaceType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.CompositeType",
-      "jniAccessible": true,
-      "fields": [
+            "type": "com.formdev.flatlaf.ui.FlatToggleButtonUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
+        },
         {
-          "name": "AnyAlpha"
+            "type": "com.formdev.flatlaf.ui.FlatToolBarBorder",
+            "allDeclaredConstructors": true
         },
         {
-          "name": "Src"
+            "type": "com.formdev.flatlaf.ui.FlatToolBarSeparatorUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
         },
         {
-          "name": "SrcNoEa"
+            "type": "com.formdev.flatlaf.ui.FlatToolBarUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
         },
         {
-          "name": "SrcOver"
+            "type": "com.formdev.flatlaf.ui.FlatToolTipUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }]
         },
         {
-          "name": "SrcOverNoEa"
+            "type": "com.formdev.flatlaf.ui.FlatTreeUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }],
+            "allDeclaredFields": true
         },
         {
-          "name": "Xor"
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.DrawGlyphList",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "long",
-            "sun.java2d.loops.SurfaceType",
-            "sun.java2d.loops.CompositeType",
-            "sun.java2d.loops.SurfaceType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.DrawGlyphListAA",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "long",
-            "sun.java2d.loops.SurfaceType",
-            "sun.java2d.loops.CompositeType",
-            "sun.java2d.loops.SurfaceType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.DrawGlyphListLCD",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "long",
-            "sun.java2d.loops.SurfaceType",
-            "sun.java2d.loops.CompositeType",
-            "sun.java2d.loops.SurfaceType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.DrawLine",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "long",
-            "sun.java2d.loops.SurfaceType",
-            "sun.java2d.loops.CompositeType",
-            "sun.java2d.loops.SurfaceType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.DrawParallelogram",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "long",
-            "sun.java2d.loops.SurfaceType",
-            "sun.java2d.loops.CompositeType",
-            "sun.java2d.loops.SurfaceType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.DrawPath",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "long",
-            "sun.java2d.loops.SurfaceType",
-            "sun.java2d.loops.CompositeType",
-            "sun.java2d.loops.SurfaceType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.DrawPolygons",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "long",
-            "sun.java2d.loops.SurfaceType",
-            "sun.java2d.loops.CompositeType",
-            "sun.java2d.loops.SurfaceType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.DrawRect",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "long",
-            "sun.java2d.loops.SurfaceType",
-            "sun.java2d.loops.CompositeType",
-            "sun.java2d.loops.SurfaceType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.FillParallelogram",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "long",
-            "sun.java2d.loops.SurfaceType",
-            "sun.java2d.loops.CompositeType",
-            "sun.java2d.loops.SurfaceType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.FillPath",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "long",
-            "sun.java2d.loops.SurfaceType",
-            "sun.java2d.loops.CompositeType",
-            "sun.java2d.loops.SurfaceType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.FillRect",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "long",
-            "sun.java2d.loops.SurfaceType",
-            "sun.java2d.loops.CompositeType",
-            "sun.java2d.loops.SurfaceType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.FillSpans",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "long",
-            "sun.java2d.loops.SurfaceType",
-            "sun.java2d.loops.CompositeType",
-            "sun.java2d.loops.SurfaceType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.GraphicsPrimitive",
-      "jniAccessible": true,
-      "fields": [
-        {
-          "name": "pNativePrim"
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.GraphicsPrimitiveMgr",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "register",
-          "parameterTypes": [
-            "sun.java2d.loops.GraphicsPrimitive[]"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.GraphicsPrimitive[]"
-    },
-    {
-      "type": "sun.java2d.loops.MaskBlit",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "long",
-            "sun.java2d.loops.SurfaceType",
-            "sun.java2d.loops.CompositeType",
-            "sun.java2d.loops.SurfaceType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.MaskFill",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "long",
-            "sun.java2d.loops.SurfaceType",
-            "sun.java2d.loops.CompositeType",
-            "sun.java2d.loops.SurfaceType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.ScaledBlit",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "long",
-            "sun.java2d.loops.SurfaceType",
-            "sun.java2d.loops.CompositeType",
-            "sun.java2d.loops.SurfaceType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.SurfaceType",
-      "jniAccessible": true,
-      "fields": [
+            "type": "com.formdev.flatlaf.ui.FlatViewportUI",
+            "methods": [{
+                    "name": "createUI",
+                    "parameterTypes": ["javax.swing.JComponent"]
+                }]
+        },
         {
-          "name": "Any3Byte"
+            "type": "com.formdev.flatlaf.ui.FlatWindowsNativeWindowBorder$WndProc",
+            "jniAccessible": true,
+            "methods": [{
+                    "name": "onNcHitTest",
+                    "parameterTypes": ["int", "int", "boolean"]
+                }, {
+                    "name": "isFullscreen",
+                    "parameterTypes": []
+                }, {
+                    "name": "fireStateChangedLaterOnce",
+                    "parameterTypes": []
+                }]
         },
         {
-          "name": "Any4Byte"
+            "type": "javax.swing.JButton",
+            "allPublicMethods": true
         },
         {
-          "name": "AnyByte"
+            "type": "javax.swing.JCheckBox",
+            "allPublicMethods": true
         },
         {
-          "name": "AnyColor"
+            "type": "javax.swing.JCheckBoxMenuItem",
+            "allPublicMethods": true
         },
         {
-          "name": "AnyInt"
+            "type": "javax.swing.JComboBox",
+            "allPublicMethods": true
         },
         {
-          "name": "AnyShort"
+            "type": "javax.swing.JComponent",
+            "methods": [{
+                    "name": "getUI",
+                    "parameterTypes": []
+                }]
         },
         {
-          "name": "ByteBinary1Bit"
+            "type": "javax.swing.JEditorPane",
+            "allPublicMethods": true
         },
         {
-          "name": "ByteBinary2Bit"
+            "type": "javax.swing.JFormattedTextField",
+            "allPublicMethods": true
         },
         {
-          "name": "ByteBinary4Bit"
+            "type": "javax.swing.JInternalFrame",
+            "allPublicMethods": true
         },
         {
-          "name": "ByteGray"
+            "type": "javax.swing.JLabel",
+            "allPublicMethods": true
         },
         {
-          "name": "ByteIndexed"
+            "type": "javax.swing.JList",
+            "allPublicMethods": true
         },
         {
-          "name": "ByteIndexedBm"
+            "type": "javax.swing.JMenu",
+            "allPublicMethods": true
         },
         {
-          "name": "FourByteAbgr"
+            "type": "javax.swing.JMenuBar",
+            "allPublicMethods": true
         },
         {
-          "name": "FourByteAbgrPre"
+            "type": "javax.swing.JMenuItem",
+            "allPublicMethods": true
         },
         {
-          "name": "Index12Gray"
+            "type": "javax.swing.JPanel",
+            "allPublicMethods": true
         },
         {
-          "name": "Index8Gray"
+            "type": "javax.swing.JPasswordField",
+            "allPublicMethods": true
         },
         {
-          "name": "IntArgb"
+            "type": "javax.swing.JPopupMenu",
+            "allPublicMethods": true
         },
         {
-          "name": "IntArgbBm"
+            "type": "javax.swing.JPopupMenu$Separator",
+            "allPublicMethods": true
         },
         {
-          "name": "IntArgbPre"
+            "type": "javax.swing.JProgressBar",
+            "allPublicMethods": true
         },
         {
-          "name": "IntBgr"
+            "type": "javax.swing.JRadioButton",
+            "allPublicMethods": true
         },
         {
-          "name": "IntRgb"
+            "type": "javax.swing.JRadioButtonMenuItem",
+            "allPublicMethods": true
         },
         {
-          "name": "IntRgbx"
+            "type": "javax.swing.JScrollBar",
+            "allPublicMethods": true
         },
         {
-          "name": "OpaqueColor"
+            "type": "javax.swing.JScrollPane",
+            "allPublicMethods": true
         },
         {
-          "name": "ThreeByteBgr"
+            "type": "javax.swing.JSeparator",
+            "allPublicMethods": true
         },
         {
-          "name": "Ushort4444Argb"
+            "type": "javax.swing.JSlider",
+            "allPublicMethods": true
         },
         {
-          "name": "Ushort555Rgb"
+            "type": "javax.swing.JSpinner",
+            "allPublicMethods": true
         },
         {
-          "name": "Ushort555Rgbx"
+            "type": "javax.swing.JSplitPane",
+            "allPublicMethods": true
         },
         {
-          "name": "Ushort565Rgb"
+            "type": "javax.swing.JTabbedPane",
+            "allPublicMethods": true
         },
         {
-          "name": "UshortGray"
+            "type": "javax.swing.JTable",
+            "allPublicMethods": true
         },
         {
-          "name": "UshortIndexed"
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.TransformHelper",
-      "jniAccessible": true,
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "long",
-            "sun.java2d.loops.SurfaceType",
-            "sun.java2d.loops.CompositeType",
-            "sun.java2d.loops.SurfaceType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.loops.XORComposite",
-      "jniAccessible": true,
-      "fields": [
+            "type": "javax.swing.JTextArea",
+            "allPublicMethods": true
+        },
         {
-          "name": "alphaMask"
+            "type": "javax.swing.JTextField",
+            "allPublicMethods": true
         },
         {
-          "name": "xorColor"
+            "type": "javax.swing.JTextPane",
+            "allPublicMethods": true
         },
         {
-          "name": "xorPixel"
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.marlin.DMarlinRenderingEngine",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.pipe.Region",
-      "jniAccessible": true,
-      "fields": [
+            "type": "javax.swing.JToggleButton",
+            "allPublicMethods": true
+        },
         {
-          "name": "bands"
+            "type": "javax.swing.JToolBar",
+            "allPublicMethods": true
         },
         {
-          "name": "endIndex"
+            "type": "javax.swing.JTree",
+            "allPublicMethods": true
         },
         {
-          "name": "hix"
+            "type": "javax.swing.PopupFactory",
+            "methods": [{
+                    "name": "getPopup",
+                    "parameterTypes": ["java.awt.Component", "java.awt.Component", "int", "int", "boolean"]
+                }]
         },
         {
-          "name": "hiy"
+            "type": "javax.swing.filechooser.FileSystemView",
+            "methods": [{
+                    "name": "getChooserShortcutPanelFiles",
+                    "parameterTypes": []
+                }, {
+                    "name": "getSystemIcon",
+                    "parameterTypes": ["java.io.File", "int", "int"]
+                }]
         },
         {
-          "name": "lox"
+            "type": "javax.swing.plaf.basic.BasicComboBoxUI",
+            "fields": [{
+                    "name": "padding"
+                }]
         },
         {
-          "name": "loy"
-        }
-      ]
-    },
-    {
-      "type": "sun.java2d.pipe.RegionIterator",
-      "jniAccessible": true,
-      "fields": [
+            "type": "javax.swing.plaf.basic.BasicGraphicsUtils",
+            "methods": [{
+                    "name": "drawStringUnderlineCharAt",
+                    "parameterTypes": ["javax.swing.JComponent", "java.awt.Graphics2D", "java.lang.String", "int", "float", "float"]
+                }, {
+                    "name": "getClippedString",
+                    "parameterTypes": ["javax.swing.JComponent", "java.awt.FontMetrics", "java.lang.String", "int"]
+                }]
+        },
         {
-          "name": "curIndex"
+            "type": "javax.swing.plaf.basic.BasicMenuItemUI",
+            "fields": [{
+                    "name": "acceleratorForeground"
+                }, {
+                    "name": "acceleratorSelectionForeground"
+                }, {
+                    "name": "disabledForeground"
+                }, {
+                    "name": "selectionBackground"
+                }, {
+                    "name": "selectionForeground"
+                }]
         },
         {
-          "name": "numXbands"
+            "type": "javax.swing.plaf.basic.BasicScrollBarUI",
+            "fields": [{
+                    "name": "maximumThumbSize"
+                }, {
+                    "name": "minimumThumbSize"
+                }, {
+                    "name": "scrollBarWidth"
+                }, {
+                    "name": "thumbColor"
+                }, {
+                    "name": "trackColor"
+                }]
         },
         {
-          "name": "region"
+            "type": "javax.swing.table.JTableHeader",
+            "allPublicMethods": true
         }
-      ]
-    },
-    {
-      "type": "sun.java2d.xr.XRBackendNative",
-      "jniAccessible": true,
-      "fields": [
+    ],
+    "resources": [
         {
-          "name": "FMTPTR_A8"
+            "glob": "com/formdev/flatlaf/*.properties"
         },
         {
-          "name": "FMTPTR_ARGB32"
+            "glob": "com/formdev/flatlaf/themes/*.properties"
         },
         {
-          "name": "MASK_XIMG"
+            "glob": "com/formdev/flatlaf/natives/*"
         }
-      ]
-    },
-    {
-      "type": "sun.java2d.xr.XRSurfaceData",
-      "jniAccessible": true,
-      "fields": [
-        {
-          "name": "picture"
-        },
+    ],
+    "bundles": [
         {
-          "name": "xid"
-        }
-      ]
-    },
-    {
-      "type": "sun.misc.Unsafe",
-      "methods": [
-        {
-          "name": "trySetMemoryAccessWarned",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "sun.net.www.protocol.jar.Handler",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "sun.reflect.misc.Trampoline",
-      "methods": [
-        {
-          "name": "invoke",
-          "parameterTypes": [
-            "java.lang.reflect.Method",
-            "java.lang.Object",
-            "java.lang.Object[]"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.security.provider.NativePRNG",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "java.security.SecureRandomParameters"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "sun.security.provider.SHA",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
+            "name": "com.formdev.flatlaf.resources.Bundle"
         }
-      ]
-    }
-  ],
-  "resources": [
-    {
-      "glob": "META-INF/microprofile-config.properties"
-    },
-    {
-      "glob": "META-INF/services/com.formdev.flatlaf.FlatDefaultsAddon"
-    },
-    {
-      "glob": "META-INF/services/io.quarkus.arc.ComponentsProvider"
-    },
-    {
-      "glob": "META-INF/services/io.quarkus.arc.ResourceReferenceProvider"
-    },
-    {
-      "glob": "META-INF/services/java.awt.im.spi.InputMethodDescriptor"
-    },
-    {
-      "glob": "META-INF/services/java.net.spi.InetAddressResolverProvider"
-    },
-    {
-      "glob": "META-INF/services/java.nio.charset.spi.CharsetProvider"
-    },
-    {
-      "glob": "META-INF/services/java.nio.file.spi.FileSystemProvider"
-    },
-    {
-      "glob": "META-INF/services/java.time.zone.ZoneRulesProvider"
-    },
-    {
-      "glob": "META-INF/services/java.util.prefs.PreferencesFactory"
-    },
-    {
-      "glob": "META-INF/services/java.util.spi.ResourceBundleControlProvider"
-    },
-    {
-      "glob": "META-INF/services/javax.imageio.spi.ImageInputStreamSpi"
-    },
-    {
-      "glob": "META-INF/services/javax.imageio.spi.ImageOutputStreamSpi"
-    },
-    {
-      "glob": "META-INF/services/javax.imageio.spi.ImageReaderSpi"
-    },
-    {
-      "glob": "META-INF/services/javax.imageio.spi.ImageTranscoderSpi"
-    },
-    {
-      "glob": "META-INF/services/javax.imageio.spi.ImageWriterSpi"
-    },
-    {
-      "glob": "META-INF/services/javax.xml.parsers.DocumentBuilderFactory"
-    },
-    {
-      "glob": "META-INF/services/javax.xml.transform.TransformerFactory"
-    },
-    {
-      "glob": "META-INF/services/org.jboss.logmanager.ConfiguratorFactory"
-    },
-    {
-      "glob": "META-INF/services/org.jboss.logmanager.LogContextInitializer"
-    },
-    {
-      "glob": "META-INF/services/org.jboss.logmanager.MDCProvider"
-    },
-    {
-      "glob": "META-INF/services/org.jboss.logmanager.NDCProvider"
-    },
-    {
-      "glob": "application.properties"
-    },
-    {
-      "glob": "com/formdev/flatlaf/FlatLaf.properties"
-    },
-    {
-      "glob": "com/formdev/flatlaf/FlatLightLaf.properties"
-    },
-    {
-      "glob": "com/formdev/flatlaf/resources/Bundle.properties"
-    },
-    {
-      "glob": "com/formdev/flatlaf/resources/Bundle_en.properties"
-    },
-    {
-      "glob": "com/formdev/flatlaf/resources/Bundle_en_US.properties"
-    },
-    {
-      "glob": "icons/app-icon.png"
-    },
-    {
-      "glob": "messages.properties"
-    },
-    {
-      "glob": "messages_en.properties"
-    },
-    {
-      "glob": "messages_en_US.properties"
-    },
-    {
-      "glob": "org/jboss/threads/Version.properties"
-    },
-    {
-      "module": "java.desktop",
-      "glob": "com/formdev/flatlaf/resources/Bundle.properties"
-    },
-    {
-      "module": "java.desktop",
-      "glob": "com/sun/swing/internal/plaf/basic/resources/basic_en.properties"
-    },
-    {
-      "module": "java.desktop",
-      "glob": "com/sun/swing/internal/plaf/basic/resources/basic_en_US.properties"
-    },
-    {
-      "module": "java.desktop",
-      "glob": "javax/swing/text/html/default.css"
-    },
-    {
-      "module": "java.desktop",
-      "glob": "sun/awt/resources/awt_en.properties"
-    },
-    {
-      "module": "java.desktop",
-      "glob": "sun/awt/resources/awt_en_US.properties"
-    },
-    {
-      "module": "java.xml",
-      "glob": "com/sun/org/apache/xml/internal/serializer/Encodings.properties"
-    },
-    {
-      "module": "java.xml",
-      "glob": "com/sun/org/apache/xml/internal/serializer/XMLEntities.properties"
-    },
-    {
-      "module": "java.xml",
-      "glob": "com/sun/org/apache/xml/internal/serializer/XMLEntities_en.properties"
-    },
-    {
-      "module": "java.xml",
-      "glob": "com/sun/org/apache/xml/internal/serializer/XMLEntities_en_US.properties"
-    },
-    {
-      "bundle": "com.formdev.flatlaf.resources.Bundle"
-    },
-    {
-      "bundle": "com.sun.org.apache.xml.internal.serializer.XMLEntities"
-    },
-    {
-      "bundle": "com.sun.swing.internal.plaf.basic.resources.basic"
-    },
-    {
-      "bundle": "messages"
-    },
-    {
-      "bundle": "sun.awt.resources.awt"
-    }
-  ]
+    ]
 }
