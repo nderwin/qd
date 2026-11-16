@@ -50,6 +50,7 @@ public class PreferencesAction extends AbstractAction {
             );
             dialog.setResizable(false);
             dialog.setDefaultCloseOperation(HIDE_ON_CLOSE);
+            SwingUtilities.updateComponentTreeUI(panel);
             dialog.add(panel);
 
             final var okButton = panel.getOkButton();
@@ -77,6 +78,9 @@ public class PreferencesAction extends AbstractAction {
             );
 
             dialog.pack();
+        } else {
+            SwingUtilities.updateComponentTreeUI(dialog);
+            dialog.validate();
         }
 
         dialog.setLocationRelativeTo(mainFrame.get());

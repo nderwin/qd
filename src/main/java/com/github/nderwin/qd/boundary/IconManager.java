@@ -5,7 +5,6 @@ import io.quarkus.logging.Log;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import java.io.IOException;
-import java.net.URL;
 
 import module java.desktop;
 
@@ -27,7 +26,7 @@ public class IconManager {
     }
 
     private ImageIcon loadIcon() {
-        URL imgUrl = IconManager.class.getResource(ICON_PATH);
+        var imgUrl = IconManager.class.getResource(ICON_PATH);
 
         if (null == imgUrl) {
             Log.debug("App icon not found at " + ICON_PATH + ". Using placeholder.");

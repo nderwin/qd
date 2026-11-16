@@ -3,11 +3,17 @@ package com.github.nderwin.qd.boundary;
 import com.github.nderwin.qd.control.ApplicationExitEvent;
 import com.github.nderwin.qd.control.I18n;
 import com.github.nderwin.qd.control.UserPreferencesStore;
+import com.github.nderwin.qd.spi.boundary.ContentContributor;
+import com.github.nderwin.qd.spi.boundary.MenuContributor;
+import com.github.nderwin.qd.spi.boundary.ToolbarContributor;
 import io.quarkiverse.desktop.awt.DesktopStartupEvent;
 import io.quarkus.logging.Log;
 import jakarta.enterprise.event.Observes;
+import jakarta.enterprise.inject.Instance;
 import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
+import java.util.ArrayList;
+import java.util.Comparator;
 
 import module java.desktop;
 
@@ -23,6 +29,15 @@ public class MainFrame extends JFrame {
     private static final int MAXIMIZATION_THRESHOLD = 8;
 
     @Inject
+    Instance<MenuContributor> menuContributors;
+
+    @Inject
+    Instance<ToolbarContributor> toolBarContributors;
+
+    @Inject
+    Instance<ContentContributor> contentContributors;
+
+    @Inject
     I18n i18n;
 
     @Inject
@@ -30,29 +45,6 @@ public class MainFrame extends JFrame {
 
     @Inject
     UserPreferencesStore prefStore;
-
-    @Inject
-    AboutAction aboutAction;
-
-    @Inject
-    ExitAction exitAction;
-
-    @Inject
-    PreferencesAction preferencesAction;
-
-    private JMenuItem aboutMenuItem;
-
-    private JMenuItem exitMenuItem;
-
-    private JMenuItem preferencesMenuItem;
-
-    private JMenu fileMenu;
-
-    private JMenu toolsMenu;
-
-    private JMenu helpMenu;
-
-    private JMenuBar menuBar;
 
     /**
      * Last trusted, non-maximized window geometry (what gets persisted).
@@ -336,44 +328,47 @@ public class MainFrame extends JFrame {
     }
 
     private void initComponents() {
-        menuBar = new JMenuBar();
-        fileMenu = new JMenu();
-        exitMenuItem = new JMenuItem();
-        toolsMenu = new JMenu();
-        preferencesMenuItem = new JMenuItem();
-        helpMenu = new JMenu();
-        aboutMenuItem = new JMenuItem();
-
+        setLayout(new BorderLayout());
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         setTitle(i18n.getMessage("app.title"));
         setIconImage(iconManager.getAppIcon().getImage());
         setMinimumSize(new Dimension(MIN_WIDTH, MIN_HEIGHT));
 
-        fileMenu.setMnemonic(i18n.getMnemonic("menu.file.mnemonic"));
-        fileMenu.setText(i18n.getMessage("menu.file"));
-
-        exitMenuItem.setAction(exitAction);
-        fileMenu.add(exitMenuItem);
-
-        menuBar.add(fileMenu);
-
-        toolsMenu.setMnemonic(i18n.getMnemonic("menu.tools.mnemonic"));
-        toolsMenu.setText(i18n.getMessage("menu.tools"));
-
-        preferencesMenuItem.setAction(preferencesAction);
-        toolsMenu.add(preferencesMenuItem);
-
-        menuBar.add(toolsMenu);
-
-        helpMenu.setMnemonic(i18n.getMnemonic("menu.help.mnemonic"));
-        helpMenu.setText(i18n.getMessage("menu.help"));
-
-        aboutMenuItem.setAction(aboutAction);
-        helpMenu.add(aboutMenuItem);
-
-        menuBar.add(helpMenu);
-
+        var menuBar = new JMenuBar();
+        var menus = new ArrayList<MenuContributor>();
+        menuContributors.forEach(menus::add);
+        menus.sort(Comparator.comparingInt(MenuContributor::order));
+        menus.forEach(m -> m.contribute(menuBar));
         setJMenuBar(menuBar);
+
+        var toolBarPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 5, 5));
+        var tools = new ArrayList<ToolbarContributor>();
+        toolBarContributors.forEach(tools::add);
+        tools.sort(Comparator.comparingInt(ToolbarContributor::order));
+        tools.forEach(t -> {
+            var bar = new JToolBar();
+            t.contribute(bar);
+            if (0 < bar.getComponentCount()) {
+                bar.setFloatable(true);
+                toolBarPanel.add(bar);
+            }
+        });
+        if (0 < toolBarPanel.getComponentCount()) {
+            add(toolBarPanel, BorderLayout.NORTH);
+        }
+
+        // we're only expecting one, right now
+        var content = contentContributors.stream()
+                .findFirst()
+                .orElseThrow(() -> new IllegalStateException("Expected exactly one content contributor, but none were found"));
+
+        if (contentContributors.stream().skip(1).findFirst().isPresent()) {
+            Log.warn("Multiple content contributors found, only the first will be used.");
+        }
+
+        var contentPanel = new JPanel(new BorderLayout());
+        content.contribute(contentPanel);
+        add(contentPanel, BorderLayout.CENTER);
     }
 
 }

@@ -22,7 +22,6 @@ public class ExitAction extends AbstractAction {
     public void init() {
         putValue(NAME, i18n.getMessage("menuitem.exit"));
         putValue(MNEMONIC_KEY, i18n.getMnemonic("menuitem.exit.mnemonic"));
-        putValue(ACCELERATOR_KEY, i18n.getAccelerator("menuitem.exit.accelerator"));
     }
 
     @Override
