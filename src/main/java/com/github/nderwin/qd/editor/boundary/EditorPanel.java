@@ -8,6 +8,7 @@ import com.github.nderwin.qd.editor.control.RedoDocumentEvent;
 import com.github.nderwin.qd.editor.control.SaveAllDocumentEvent;
 import com.github.nderwin.qd.editor.control.SaveDocumentEvent;
 import com.github.nderwin.qd.editor.control.UndoDocumentEvent;
+import com.github.nderwin.qd.spi.boundary.UIListener;
 import io.quarkus.logging.Log;
 import jakarta.annotation.PostConstruct;
 import jakarta.enterprise.event.Observes;
@@ -16,12 +17,14 @@ import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
 import java.awt.event.MouseEvent;
 import javax.swing.event.DocumentEvent;
+import org.kordamp.ikonli.bootstrapicons.BootstrapIcons;
+import org.kordamp.ikonli.swing.FontIcon;
 
 import module java.base;
 import module java.desktop;
 
 @Singleton
-public class EditorPanel extends JTabbedPane {
+public class EditorPanel extends JTabbedPane implements UIListener {
 
     private static final String DOCUMENT_PATH = "document.path";
     private static final String DOCUMENT_SAVED_TEXT = "document.savedText";
@@ -168,6 +171,28 @@ public class EditorPanel extends JTabbedPane {
         }
     }
 
+    @Override
+    public Optional<FontIcon> getSmallIcon() {
+        return Optional.empty();
+    }
+
+    @Override
+    public Optional<FontIcon> getLargeIcon() {
+        return Optional.empty();
+    }
+
+    @Override
+    public void uiRefreshed() {
+        for (int i = 0; i < getTabCount(); i++) {
+            var tab = (JPanel) getTabComponentAt(i);
+            for (var c : tab.getComponents()) {
+                if (c instanceof JButton jb) {
+                    ((FontIcon) jb.getIcon()).setIconColor(jb.getForeground());
+                }
+            }
+        }
+    }
+
     private JTextArea createTextArea(final String text) {
         var textArea = new JTextArea(text);
         textArea.setFont(new Font(Font.MONOSPACED, Font.PLAIN, 12));
@@ -228,7 +253,7 @@ public class EditorPanel extends JTabbedPane {
         tab.addMouseListener(selectTab);
         label.addMouseListener(selectTab);
 
-        var close = new JButton("×");
+        var close = new JButton(FontIcon.of(BootstrapIcons.X, 16, label.getForeground()));
         close.setFocusable(false);
         close.setBorderPainted(false);
         close.setContentAreaFilled(false);
@@ -374,7 +399,7 @@ public class EditorPanel extends JTabbedPane {
 
         boolean dirty = false;
         UndoManager undoManager = null;
-        if (hasDoc) {
+        if (hasDoc && null != textArea) {
             dirty = isDirty(textArea);
             final var umObj = textArea.getClientProperty(DOCUMENT_UNDO_MANAGER);
             if (umObj instanceof final UndoManager um) {
